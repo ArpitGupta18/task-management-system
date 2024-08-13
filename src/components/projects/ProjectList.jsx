@@ -47,7 +47,7 @@ const ProjectList = () => {
 			</div>
 
 			<div className={styles.projectList}>
-				<h1 className={styles.projectHeader}>Projects List</h1>
+				<h1>Projects List</h1>
 				<ul className={styles.projects}>
 					{projects.map((project) => (
 						<li key={project.id} className={styles.projectItem}>

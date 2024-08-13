@@ -34,7 +34,7 @@ const Navbar = () => {
 	return (
 		<Router>
 			<header className={styles.navBar} ref={navRef}>
-				<div className={styles.navLogo}>ProjectM</div>
+				<div className={styles.navLogo}>TaskZen</div>
 				<nav>
 					<div className={styles.hamburger} onClick={toggleMenu}>
 						<span className={styles.bar}></span>

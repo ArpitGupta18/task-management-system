@@ -21,6 +21,7 @@
 }
 
 .projectItem {
+	margin-top: 20px;
 	border: 1px solid #ddd;
 	border-radius: 5px;
 	margin-bottom: 15px;

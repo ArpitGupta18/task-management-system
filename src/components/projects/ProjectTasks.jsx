@@ -11,9 +11,6 @@ const ProjectTasks = ({ projectId, projectName }) => {
 
 	return (
 		<div className={styles.projectTasksContainer}>
-			<h3 className={styles.projectTasksHeader}>
-				Tasks for {projectName}
-			</h3>
 			{projectTasks.length > 0 ? (
 				<ul className={styles.taskList}>
 					{projectTasks.map((task) => (
