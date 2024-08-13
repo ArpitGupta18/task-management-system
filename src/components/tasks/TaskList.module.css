@@ -1,0 +1,117 @@
+.taskListContainer {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	padding: 20px;
+}
+
+@media (min-width: 768px) {
+	.taskListContainer {
+		flex-direction: row;
+	}
+}
+
+.taskFormWrapper {
+	flex: 1;
+	max-width: 100%;
+}
+
+.taskListWrapper {
+	flex: 2;
+	max-width: 100%;
+}
+
+.taskListWrapper h1 {
+	margin-bottom: 20px;
+}
+
+.searchInput {
+	width: 100%;
+	padding: 12px;
+	margin-bottom: 20px;
+	font-size: 1rem;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.taskList {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.taskItem {
+	padding: 15px;
+	margin-bottom: 10px;
+	border: 1px solid #d6d6d6;
+	border-radius: 8px;
+	background-color: #fff;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.taskItem h2 {
+	font-size: 1.5rem;
+	color: #333;
+	margin-bottom: 10px;
+}
+
+.taskItem p {
+	font-size: 1rem;
+	color: #666;
+	margin: 5px 0;
+}
+
+.taskItem .priority,
+.taskItem .status {
+	display: inline-block;
+	padding: 5px 10px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	border-radius: 20px;
+	color: #fff;
+}
+
+.taskItem .priority {
+	background-color: #4caf50;
+}
+
+.taskItem .status {
+	background-color: #ffc107;
+}
+
+.editButton,
+.deleteButton {
+	padding: 8px 15px;
+	margin-right: 10px;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	font-size: 0.875rem;
+	border-radius: 5px;
+	transition: background-color 0.3s ease;
+}
+
+.editButton {
+	background-color: #007bff;
+}
+
+.editButton:hover {
+	background-color: #0056b3;
+}
+
+.deleteButton {
+	background-color: #dc3545;
+}
+
+.deleteButton:hover {
+	background-color: #c82333;
+}
+
+@media (max-width: 576px) {
+	.editButton,
+	.deleteButton {
+		padding: 6px 12px;
+		font-size: 0.75rem;
+	}
+}

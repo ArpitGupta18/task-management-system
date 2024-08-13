@@ -1,0 +1,29 @@
+/* Light Theme */
+body.light {
+	background-color: #ffffff;
+	color: #292929;
+}
+
+.light .header {
+	background-color: #f1f1f1;
+}
+
+.light .button {
+	background-color: #007bff;
+	color: #ffffff;
+}
+
+/* Dark Theme */
+body.dark {
+	background-color: #292929;
+	color: #ffffff;
+}
+
+.dark .header {
+	background-color: #333333;
+}
+
+.dark .button {
+	background-color: #0056b3;
+	color: #ffffff;
+}

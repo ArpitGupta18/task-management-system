@@ -1,0 +1,130 @@
+.projectListContainer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 20px;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+.projectFormWrapper {
+	flex: 1;
+	max-width: 300px;
+	min-width: 250px;
+}
+
+.projectList {
+	flex: 1.8;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.projectItem {
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	margin-bottom: 15px;
+	padding: 20px;
+	background-color: #fff;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.projectName {
+	font-size: 1.5rem;
+	margin: 0 0 10px 0;
+	color: #333;
+}
+
+.projectDescription {
+	margin: 0 0 15px 0;
+	color: #666;
+}
+
+.projectButton {
+	padding: 10px 15px;
+	margin-right: 10px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	color: #fff;
+	font-size: 0.9rem;
+	transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.projectButton:hover {
+	transform: scale(1.05);
+}
+
+.editButton {
+	background-color: #007bff;
+}
+
+.deleteButton {
+	background-color: #dc3545;
+}
+
+.toggleTasksButton {
+	background-color: #28a745;
+}
+
+.editButton:hover {
+	background-color: #0056b3;
+}
+
+.deleteButton:hover {
+	background-color: #c82333;
+}
+
+.toggleTasksButton:hover {
+	background-color: #218838;
+}
+
+.projectHeader {
+	font-size: 2rem;
+	margin-bottom: 20px;
+	color: #333;
+}
+
+.projects {
+	list-style-type: none;
+}
+
+@media (max-width: 768px) {
+	.projectListContainer {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.projectFormWrapper {
+		max-width: 100%;
+		padding: 15px;
+	}
+
+	.projectList {
+		margin-top: 20px;
+		max-width: 100%;
+	}
+
+	.projectItem {
+		padding: 15px;
+	}
+}
+
+@media (max-width: 480px) {
+	.projectName {
+		font-size: 1.2rem;
+	}
+
+	.projectDescription {
+		font-size: 0.9rem;
+	}
+
+	.projectButton {
+		padding: 8px 12px;
+		font-size: 0.8rem;
+	}
+
+	.projectHeader {
+		font-size: 1.5rem;
+	}
+}

@@ -1,0 +1,43 @@
+.projectFormContainer {
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #f9f9f9;
+	border-radius: 8px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.projectFormHeader {
+	font-size: 1.8rem;
+	margin-bottom: 20px;
+	color: #333;
+}
+
+.projectInput,
+.projectTextarea {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 15px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+.projectTextarea {
+	height: 100px;
+	resize: vertical;
+}
+
+.saveButton {
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	color: #fff;
+	background-color: #007bff;
+	font-size: 1rem;
+}
+
+.saveButton:hover {
+	background-color: #0056b3;
+}

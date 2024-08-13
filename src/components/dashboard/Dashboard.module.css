@@ -1,0 +1,216 @@
+.dashboard {
+	padding: 20px;
+	background-color: #f5f5f5;
+}
+
+.title {
+	font-size: 2rem;
+	margin-bottom: 20px;
+	color: #333;
+}
+
+.searchInput {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 20px;
+	font-size: 1rem;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+.taskSummary {
+	margin-bottom: 30px;
+	font-size: 20px;
+	display: flex;
+	align-items: center;
+	gap: 30px;
+}
+
+.taskSubTitle {
+	font-size: 1.5rem;
+	color: #444;
+}
+
+.taskDetail {
+	font-weight: 800;
+	color: #444;
+}
+
+.todoColor {
+	color: #ffc107;
+}
+
+.inProgressColor {
+	color: #17a2b8;
+}
+
+.completedColor {
+	color: #28a745;
+}
+
+.taskLists {
+	display: flex;
+	justify-content: space-between;
+}
+
+.upcomingTasks,
+.missedTasks {
+	width: 48%;
+	background-color: #fff;
+	padding: 15px;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.subTitle {
+	font-size: 1.5rem;
+	margin-bottom: 15px;
+	color: #444;
+}
+
+.taskList {
+	list-style-type: none;
+}
+
+.taskItem {
+	padding: 10px;
+	border-bottom: 1px solid #d6d6d6;
+}
+
+.taskItem:last-child {
+	border-bottom: none;
+}
+
+.taskWrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	margin-bottom: 10px;
+}
+
+.priorityStatusWrapper {
+	display: flex;
+	justify-content: right;
+	gap: 15px;
+}
+
+.taskInfo {
+	padding: 6px 14px;
+	font-size: 14px;
+	font-weight: bold;
+	border-radius: 20px;
+	color: rgb(65, 65, 65);
+}
+
+.taskName {
+	font-size: 1.25rem;
+	color: #272727;
+	margin-bottom: 5px;
+}
+
+.taskDescription {
+	line-height: 25px;
+}
+
+.taskProject {
+	margin: 10px 0;
+}
+
+.taskDueDate {
+	margin: 10px 0;
+	color: rgb(199, 63, 0);
+	font-weight: bold;
+}
+
+.noTasksMessage {
+	font-size: 1rem;
+	color: #888;
+}
+
+@media (max-width: 1200px) {
+	.taskSummary {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+}
+
+@media (max-width: 992px) {
+	.taskLists {
+		flex-direction: column;
+	}
+
+	.upcomingTasks,
+	.missedTasks {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+}
+
+@media (max-width: 768px) {
+	.title {
+		font-size: 1.75rem;
+	}
+
+	.taskSubTitle,
+	.subTitle {
+		font-size: 1.25rem;
+	}
+
+	.taskDetail {
+		font-size: 18px;
+	}
+
+	.taskInfo {
+		font-size: 12px;
+		padding: 4px 10px;
+	}
+}
+
+@media (max-width: 576px) {
+	.dashboard {
+		padding: 10px;
+	}
+
+	.searchInput {
+		font-size: 0.875rem;
+		padding: 8px;
+	}
+
+	.taskName {
+		font-size: 1rem;
+	}
+
+	.taskDescription,
+	.taskProject,
+	.taskDueDate {
+		font-size: 0.875rem;
+	}
+
+	.taskDetail {
+		font-size: 16px;
+	}
+}
+
+.highPriority {
+	background-color: #e53935;
+}
+
+.mediumPriority {
+	background-color: #ff9800;
+}
+
+.lowPriority {
+	background-color: #4caf50;
+}
+
+.todoStatus {
+	background-color: #ffc107;
+}
+
+.inProgressStatus {
+	background-color: #17a2b8;
+}
+
+.completedStatus {
+	background-color: #28a745;
+}

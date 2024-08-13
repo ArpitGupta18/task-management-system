@@ -1,0 +1,103 @@
+.projectTasksContainer {
+	margin-top: 20px;
+	padding: 20px;
+	background-color: #ffffff;
+	border-radius: 8px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	box-sizing: border-box;
+	transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projectTasksContainer:hover {
+	background-color: #f7f7f7;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.taskList {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.taskItem {
+	border: 1px solid #dddddd;
+	border-radius: 5px;
+	padding: 15px;
+	margin-bottom: 12px;
+	background-color: #f9f9f9;
+	transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.taskItem:hover {
+	background-color: #f1f1f1;
+	transform: translateY(-2px);
+}
+
+.taskItem h4 {
+	font-size: 1.2rem;
+	margin: 0 0 8px 0;
+	color: #333333;
+	font-weight: 600;
+}
+
+.taskItem p {
+	margin: 4px 0;
+	color: #666666;
+	line-height: 1.4;
+}
+
+.taskDetails {
+	margin-top: 8px;
+}
+
+.taskDetails p {
+	margin: 2px 0;
+}
+
+.noTasksMessage {
+	font-style: italic;
+	color: #888888;
+	margin-top: 15px;
+	text-align: center;
+	font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+	.projectTasksContainer {
+		padding: 15px;
+	}
+
+	.taskItem {
+		padding: 12px;
+	}
+
+	.taskItem h4 {
+		font-size: 1rem;
+	}
+
+	.taskItem p {
+		font-size: 0.9rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.projectTasksContainer {
+		padding: 12px;
+	}
+
+	.taskItem {
+		padding: 10px;
+	}
+
+	.taskItem h4 {
+		font-size: 0.95rem;
+	}
+
+	.taskItem p {
+		font-size: 0.85rem;
+	}
+
+	.noTasksMessage {
+		font-size: 0.85rem;
+	}
+}
